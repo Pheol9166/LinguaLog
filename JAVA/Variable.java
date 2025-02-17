@@ -82,5 +82,46 @@ public class Variable {
 
         System.out.println(String.format("I hate %d things", 7)); // formatting
         // %를 문자로 쓰고 싶으면 %%로 써야함
+    
+        System.out.println(String.format("%-10sjane", "hi")); // 공백 표현과 정렬
+
+        System.out.println(String.format("%.4f", 3.141592)); // 소수점 n째 자리까지 나타냄
+
+        System.out.printf("%-20s jude", "what is wrong,"); // printf: 포매팅된 문자열 출력 가능
+        
+        /*
+         * StringBuffer
+         * 문자열 추가 혹은 변경 시 사용하는 자료형
+         */
+
+         StringBuffer sb = new StringBuffer(); // 객체 생성
+         sb.append("hello");
+         sb.append(" java");
+         String result2 = sb.toString(); // 문자열 환원
+         System.out.println(result2);
+ 
+         String result3 = "";
+         result2 += "hello";
+         result2 += " java"; // + 연산을 할 때마다 새로운 String 객체 생성
+         System.out.println(result3);
+ 
+         /*
+          * String은 immutable하기 때문에 바뀔 수 없음
+          * 때문에 mutable한 StringBuffer를 사용함
+          * 대신 StringBuffer가 더 무거움
+          */
+ 
+         /*
+          * cf) StringBuilder
+          * StringBuffer: 멀티스레드에서 안전
+          * StringBuilder: 성능 우수
+          */
+ 
+         // method
+         StringBuffer sb2 = new StringBuffer();
+         sb2.append("jump to java");
+         sb2.insert(0, "Welcome to ");
+         System.out.println(sb2);
+         System.out.println(sb2.substring(0, 10));    
     }
 }
