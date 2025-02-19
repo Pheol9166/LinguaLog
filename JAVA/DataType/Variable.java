@@ -1,3 +1,4 @@
+package DataType;
 import java.util.Arrays;
 
 public class Variable {

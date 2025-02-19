@@ -1,3 +1,4 @@
+package DataType;
 // import 할 때도 세미 콜론
 import java.util.ArrayList; 
 import java.util.Arrays;

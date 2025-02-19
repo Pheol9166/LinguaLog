@@ -1,3 +1,4 @@
+package DataType;
 public class Enum {
     enum Language {
         KOREAN,
