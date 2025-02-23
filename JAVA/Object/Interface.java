@@ -1,3 +1,4 @@
+package Object;
 /*
  * Interface
  * 서로 다른 두 개의 시스템, 장치 사이에서 정보 또는 신호를 주고받는 접점

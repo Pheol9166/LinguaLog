@@ -1,3 +1,5 @@
+package Object;
+
 class Calculator {
     static int result = 0;
 

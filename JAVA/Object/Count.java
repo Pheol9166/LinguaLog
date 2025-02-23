@@ -1,3 +1,5 @@
+package Object;
+
 class Updater {
     void update(int count) {
         count++;
